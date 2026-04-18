@@ -1,0 +1,4 @@
+.active-nav-link {
+    color: #2DD4BF !important; /* Tailwind accent color */
+    font-weight: 700;
+}

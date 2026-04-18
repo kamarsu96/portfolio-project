@@ -1,0 +1,13 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="modernGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <!-- Modern Geometric 'RT' -->
+  <path d="M40 140V60H80C100 60 110 75 110 100C110 125 100 140 80 140H40Z" fill="url(#modernGrad)" fill-opacity="0.1" stroke="url(#modernGrad)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M40 140V60M40 100H100M120 60H160M140 60V140" stroke="url(#modernGrad)" stroke-width="12" stroke-linecap="round"/>
+  <!-- Accent Dot -->
+  <circle cx="160" cy="140" r="8" fill="#06b6d4"/>
+</svg>

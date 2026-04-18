@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="logoGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#logoGlow)">
+    <!-- R (Refined Serif) -->
+    <path d="M50 110V50H75C85 50 92 56 92 65C92 74 85 80 75 80H62M78 80L95 110" stroke="url(#logoGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- T (Refined Serif) -->
+    <path d="M90 50H140M115 50V110" stroke="url(#logoGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Swoosh -->
+    <path d="M35 75C50 65 110 65 155 95" stroke="url(#logoGrad)" stroke-width="4" stroke-linecap="round" stroke-opacity="0.8"/>
+    
+    <!-- Name Text -->
+    <text x="100" y="145" text-anchor="middle" fill="white" font-family="serif" font-weight="bold" font-size="26" letter-spacing="2">RAVI TEJA</text>
+    <text x="100" y="170" text-anchor="middle" fill="#9ca3af" font-family="sans-serif" font-weight="600" font-size="12" letter-spacing="8">KAMARSU</text>
+  </g>
+</svg>

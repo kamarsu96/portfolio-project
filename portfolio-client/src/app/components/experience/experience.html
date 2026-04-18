@@ -1,0 +1,62 @@
+<section class="bg-dark-bg py-16">
+  <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-white mb-10 text-center">Professional Experience</h2>
+
+      <div *ngIf="isLoading()" class="flex justify-center py-10">
+          <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-accent"></div>
+      </div>
+
+      <div *ngIf="!isLoading()" class="relative border-l border-gray-800 ml-4 md:ml-10 space-y-12">
+          
+          <div *ngFor="let item of experience(); let i = index" 
+               class="relative pl-8 md:pl-10 p-2 group" 
+               data-aos="fade-up"
+               [attr.data-aos-delay]="i * 100">
+               
+              <span class="absolute -left-[7px] top-4 flex items-center justify-center w-3 h-3 rounded-full ring-8 ring-dark-bg transition-all duration-300"
+                    [ngClass]="item.isCurrent ? 'bg-blue-500' : 'bg-gray-800 border-2 border-gray-600 group-hover:border-gray-400'">
+              </span>
+              
+              <h3 class="mb-1 text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors">
+                  {{ item.role }}
+              </h3>
+              <div class="mb-4 text-sm md:text-base text-gray-500 font-medium">
+                  {{ item.company }} &bull; {{ item.duration }}
+              </div>
+              
+              <p *ngIf="item.description && item.description.length === 1" class="text-base text-gray-400 leading-relaxed font-light">
+                  {{ item.description[0] }}
+              </p>
+              
+              <ul *ngIf="item.description && item.description.length > 1" class="space-y-2 text-base font-light text-gray-400 list-outside ml-4 mt-2">
+                  <li *ngFor="let bullet of item.description" class="list-disc">{{ bullet }}</li>
+              </ul>
+          </div>
+
+      </div>
+
+      <!-- Education Sections (kept mostly static as they are usually less frequent to change, or could be moved to Firestore too) -->
+      <div class="mt-20">
+          <h2 class="text-3xl font-bold text-white mb-10 text-center">Education</h2>
+          <div class="relative border-l border-gray-800 ml-4 md:ml-10 space-y-12">
+            <!-- Education 1 -->
+            <div class="relative pl-8 md:pl-10 p-2 group" data-aos="fade-up" data-aos-delay="200">
+                <span class="absolute -left-[7px] top-4 flex items-center justify-center w-3 h-3 rounded-full ring-8 ring-dark-bg transition-all duration-300 bg-gray-800 border-2 border-gray-600 group-hover:border-gray-400">
+                </span>
+                <h3 class="mb-1 text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors">B.Tech (ECE)</h3>
+                <div class="mb-4 text-sm md:text-base text-gray-500 font-medium">Pragati Engineering College &bull; 2021</div>
+                <p class="text-base text-gray-400 font-light">Electronics & Communication Engineering.</p>
+            </div>
+
+            <!-- Education 2 -->
+            <div class="relative pl-8 md:pl-10 p-2 group" data-aos="fade-up" data-aos-delay="300">
+                <span class="absolute -left-[7px] top-4 flex items-center justify-center w-3 h-3 rounded-full ring-8 ring-dark-bg transition-all duration-300 bg-gray-800 border-2 border-gray-600 group-hover:border-gray-400">
+                </span>
+                <h3 class="mb-1 text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors">Diploma (DECE)</h3>
+                <div class="mb-4 text-sm md:text-base text-gray-500 font-medium">Col. DS Raju Polytechnic &bull; 2016</div>
+                <p class="text-base text-gray-400 font-light">Electronics & Communication Engineering.</p>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glassBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+  <!-- Glass Circle -->
+  <circle cx="100" cy="100" r="80" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+  <circle cx="100" cy="100" r="80" filter="url(#glassBlur)" fill="white" fill-opacity="0.02"/>
+  
+  <!-- RT Initials -->
+  <g transform="translate(60, 65) scale(0.8)">
+    <path d="M10 70V10H35C45 10 52 18 52 30C52 42 45 50 35 50H10M35 50L55 70" stroke="url(#glassGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M50 10H90M70 10V70" stroke="url(#glassGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #050505;
+    color: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+}
+
+.active-nav-link {
+    color: #60a5fa !important;
+    /* Lighter Blue for better contrast */
+    font-weight: 700 !important;
+    border-bottom: 2px solid #60a5fa;
+}
+
+/* Custom AOS Webflow-style Drop-ins */
+[data-aos="mask-up"] {
+    transform: translateY(110%);
+    transition-property: transform;
+    transition-duration: 1.2s !important;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
+[data-aos="mask-up"].aos-animate {
+    transform: translateY(0);
+}
+
+[data-aos="zoom-in-heavy"] {
+    opacity: 0;
+    transform: scale(0.85);
+    transition-property: transform, opacity;
+    transition-duration: 0.8s !important;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+[data-aos="zoom-in-heavy"].aos-animate {
+    opacity: 1;
+    transform: scale(1);
+}
