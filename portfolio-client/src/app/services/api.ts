@@ -1,28 +1,42 @@
-import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, from, map } from 'rxjs';
-import { Firestore, collection, collectionData, addDoc } from '@angular/fire/firestore';
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  private firestore: Firestore = inject(Firestore);
 
-  constructor(private http: HttpClient) { }
+  constructor() {}
 
+  // Static portfolio data (replace with your real data)
   getProjects(): Observable<any[]> {
-    const projectsRef = collection(this.firestore, 'projects');
-    return collectionData(projectsRef, { idField: 'id' }) as Observable<any[]>;
+    return of([
+      {
+        id: 1,
+        title: 'Portfolio Website',
+        description: 'Personal portfolio built with Angular',
+      },
+      {
+        id: 2,
+        title: 'Reporting Dashboard',
+        description: 'Dynamic reporting system with filters',
+      }
+    ]);
   }
 
   getExperience(): Observable<any[]> {
-    const experienceRef = collection(this.firestore, 'experience');
-    return collectionData(experienceRef, { idField: 'id' }) as Observable<any[]>;
+    return of([
+      {
+        id: 1,
+        role: 'Angular Developer',
+        company: 'Your Company',
+        duration: '2022 - Present'
+      }
+    ]);
   }
 
   sendMessage(data: any): Observable<any> {
-    const messagesRef = collection(this.firestore, 'messages');
-    return from(addDoc(messagesRef, { ...data, timestamp: new Date() }));
+    console.log('Message sent:', data);
+    return of({ success: true });
   }
 }
