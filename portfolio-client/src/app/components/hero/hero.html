@@ -1,236 +1,374 @@
 <section class="bg-dark-bg text-white min-h-screen p-4 md:p-8 pt-[80px] md:pt-[80px] flex flex-col justify-center">
-  <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]">
-      
-      <!-- 1. Main Title Card (Large) -->
-      <div class="col-span-1 md:col-span-2 lg:col-span-3 row-span-1 md:row-span-2 bg-card-bg rounded-3xl p-8 flex flex-col justify-between border border-white/5 relative overflow-hidden group">
-          <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/30 transition-all duration-500"></div>
-          
-          <div class="z-10">
-              <div class="overflow-hidden in-flex mb-6">
-                 <div class="inline-flex items-center px-3 py-1 rounded-full border border-accent/20 bg-accent/10 text-accent text-xs font-bold" data-aos="mask-up" data-aos-delay="200">
-                     AVAILABLE FOR HIRE
-                 </div>
-              </div>
-              <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 hidden md:block">
-                  <div class="overflow-hidden pb-1"><div data-aos="mask-up" data-aos-delay="300">Front-End Developer</div></div>
-                  <div class="overflow-hidden pb-1"><div data-aos="mask-up" data-aos-delay="400"><span class="text-accent">&</span> Software Engineer</div></div>
-              </h1>
-              <!-- Mobile Fallback -->
-              <h1 class="text-3xl font-bold leading-tight mb-4 md:hidden overflow-hidden">
-                  <div data-aos="mask-up" data-aos-delay="300">Front-End Developer <span class="text-accent">&</span> Software Engineer</div>
-              </h1>
-              
-              <div class="overflow-hidden">
-                  <p class="text-gray-400 text-sm md:text-base max-w-sm" data-aos="mask-up" data-aos-delay="500">
-                      Passionate Front-End Developer with 4+ years of professional experience in designing and developing scalable web applications using Angular, ReactJS, and TypeScript.
-                  </p>
-              </div>
-          </div>
-          
-          <div class="mt-8 z-10 overflow-hidden">
-              <a routerLink="/projects" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-accent rounded-full hover:bg-blue-600 transition-all shadow-lg shadow-blue-900/20 group/btn" data-aos="mask-up" data-aos-delay="600">
-                  View Projects
-                  <svg class="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              </a>
-          </div>
-      </div>
+    <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]">
 
-      <!-- 2. Profile Card -->
-      <div class="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 md:row-span-2 bg-card-bg rounded-3xl p-0 overflow-hidden border border-white/5 relative group" data-aos="zoom-in" data-aos-delay="100">
-          <!-- Realistic Image instead of simple avatar placeholder -->
-          <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 group-hover:scale-105 transition-transform duration-700">
-             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Tech setup" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
-          </div>
-          
-          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-dark-bg/90 to-transparent">
-              <h3 class="text-xl font-bold">Ravi Teja Kamarsu</h3>
-              <p class="text-gray-400 text-sm">Based in Andhra Pradesh, India</p>
-          </div>
-      </div>
-
-      <!-- 3. Experience Card -->
-      <div class="col-span-1 md:col-span-1 row-span-1 bg-card-bg rounded-3xl p-6 flex flex-col justify-center border border-white/5 hover:border-accent/30 transition-colors group" data-aos="fade-left" data-aos-delay="200">
-          <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4 text-accent group-hover:scale-110 transition-transform">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          </div>
-          <h2 class="text-4xl font-bold text-white mb-1">4+</h2>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Years Experience</p>
-      </div>
-
-      <!-- 4. Marquee / Skills / Tagline -->
-      <div class="col-span-1 md:col-span-2 row-span-1 bg-card-bg rounded-3xl p-6 flex items-center justify-center border border-white/5 overflow-hidden relative group" data-aos="fade-up" data-aos-delay="300">
-          <div class="absolute inset-0 bg-blue-900/5"></div>
-          <div class="flex flex-wrap gap-3 justify-center z-10">
-             <span class="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-bold tracking-wide transition-transform group-hover:animate-float cursor-default">
-                 SCALABLE WEB APPS
-             </span>
-             <span class="px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-bold tracking-wide transition-transform group-hover:animate-float cursor-default [animation-delay:200ms]">
-                 MICRO FRONTENDS
-             </span>
-             <span class="px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-300 text-sm font-bold tracking-wide transition-transform group-hover:animate-float cursor-default [animation-delay:400ms]">
-                 PERFORMANCE TUNING
-             </span>
-          </div>
-      </div>
-
-      <!-- 5. Projects Shipped Card -->
-      <div class="col-span-1 md:col-span-1 row-span-1 bg-card-bg rounded-3xl p-6 flex flex-col justify-center border border-white/5 hover:border-accent/30 transition-colors group" data-aos="fade-right" data-aos-delay="400">
-          <div class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4 text-purple-400 group-hover:scale-110 transition-transform">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-          </div>
-          <div class="flex items-baseline space-x-1">
-            <h2 class="text-4xl font-bold text-white mb-1">15+</h2>
-          </div>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Software Systems</p>
-      </div>
-
-      <!-- 6. Tech Stack -->
-      <div class="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-card-bg rounded-3xl p-6 border border-white/5 flex flex-col justify-center" data-aos="fade-left" data-aos-delay="500">
-          <p class="text-gray-500 text-xs font-bold uppercase tracking-widest mb-4">Tech Stack</p>
-          <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Angular
-              </span>
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> React
-              </span>
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> TS
-              </span>
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span> JS
-              </span>
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Node
-              </span>
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span> Bootstrap
-              </span>
-              <span class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Tailwind
-              </span>
-          </div>
-      </div>
-
-      <!-- 7. LinkedIn Card -->
-      <a href="https://www.linkedin.com/in/ravi-teja-kamarsu-b64727119" target="_blank" class="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 bg-[#24292e] rounded-3xl p-6 border border-white/5 flex flex-col justify-center items-center group hover:bg-[#1b1f23] transition-colors relative overflow-hidden" data-aos="zoom-in" data-aos-delay="600">
-        <svg class="w-12 h-12 text-white mb-2 relative z-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
-        <span class="text-white font-bold relative z-10">Connect</span>
-        <div class="absolute inset-0 bg-[#0077b5]/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-      </a>
-
-      <!-- 8. GitHub Card -->
-      <a href="https://github.com/kamarsu96" target="_blank" class="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 bg-[#24292e] rounded-3xl p-6 border border-white/5 flex flex-col justify-center items-center group hover:bg-[#1b1f23] transition-colors relative overflow-hidden" data-aos="zoom-in" data-aos-delay="700">
-        <svg class="w-12 h-12 text-white mb-2 relative z-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-        <span class="text-white font-bold relative z-10">Follow</span>
-        <div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-      </a>
-
-      <!-- 9. Project Card 1 text-only -->
-      <a routerLink="/projects" class="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-[#050505] rounded-[32px] p-8 md:p-10 border border-white/5 group hover:border-blue-500/30 transition-all duration-700 relative overflow-hidden flex flex-col justify-end min-h-[300px]" data-aos="zoom-in" data-aos-delay="800">
-        <!-- Background Massive Number -->
-        <div class="absolute -bottom-10 -right-4 text-[180px] font-bold text-white/[0.02] tracking-tighter group-hover:scale-110 group-hover:-translate-y-4 group-hover:text-blue-500/10 transition-transform duration-700 select-none pointer-events-none">01</div>
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-
-        <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 mb-4">
-                <span class="w-2 h-2 rounded-full bg-blue-500/80 group-hover:animate-pulse"></span>
-                <span class="text-blue-400 font-mono text-xs uppercase tracking-widest">Featured Work</span>
+        <!-- 1. Main Title Card (Large) -->
+        <div
+            class="col-span-1 md:col-span-2 lg:col-span-3 row-span-1 md:row-span-2 bg-card-bg rounded-3xl p-8 flex flex-col justify-between border border-white/5 relative overflow-hidden group">
+            <div
+                class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent/30 transition-all duration-500">
             </div>
-            <h3 class="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight group-hover:text-blue-300 transition-colors duration-500">Dynamic Reporting</h3>
-            <p class="text-gray-500 text-sm max-w-[280px] leading-relaxed group-hover:text-gray-400 transition-colors duration-500 line-clamp-2">Scalable analytics platform designed to generate real-time operational reports.</p>
-            
-            <!-- Hover Action Area -->
-            <div class="mt-8 flex items-center justify-between">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">Angular</span>
-                    <span class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">TypeScript</span>
+
+            <div class="z-10">
+                <div class="overflow-hidden in-flex mb-6">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full border border-accent/20 bg-accent/10 text-accent text-xs font-bold"
+                        data-aos="mask-up" data-aos-delay="200">
+                        AVAILABLE FOR HIRE
+                    </div>
                 </div>
-                <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-700 shadow-lg shadow-transparent group-hover:shadow-blue-500/30">
-                    <svg class="w-4 h-4 text-white transform -rotate-45 group-hover:rotate-0 transition-transform duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 hidden md:block">
+                    <div class="overflow-hidden pb-1">
+                        <div data-aos="mask-up" data-aos-delay="300">Front-End Developer</div>
+                    </div>
+                    <div class="overflow-hidden pb-1">
+                        <div data-aos="mask-up" data-aos-delay="400"><span class="text-accent">&</span> Software
+                            Engineer</div>
+                    </div>
+                </h1>
+                <!-- Mobile Fallback -->
+                <h1 class="text-3xl font-bold leading-tight mb-4 md:hidden overflow-hidden">
+                    <div data-aos="mask-up" data-aos-delay="300">Front-End Developer <span class="text-accent">&</span>
+                        Software Engineer</div>
+                </h1>
+
+                <div class="overflow-hidden">
+                    <p class="text-gray-400 text-sm md:text-base max-w-sm" data-aos="mask-up" data-aos-delay="500">
+                        Passionate Front-End Developer with 4+ years of professional experience in designing and
+                        developing scalable web applications using Angular, ReactJS, and TypeScript.
+                    </p>
                 </div>
+            </div>
+
+            <div class="mt-8 z-10 overflow-hidden">
+                <a routerLink="/projects"
+                    class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-accent rounded-full hover:bg-blue-600 transition-all shadow-lg shadow-blue-900/20 group/btn"
+                    data-aos="mask-up" data-aos-delay="600">
+                    View Projects
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
             </div>
         </div>
-      </a>
 
-      <!-- 10. Project Card 2 text-only -->
-      <a routerLink="/projects" class="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-[#050505] rounded-[32px] p-8 md:p-10 border border-white/5 group hover:border-purple-500/30 transition-all duration-700 relative overflow-hidden flex flex-col justify-end min-h-[300px]" data-aos="zoom-in" data-aos-delay="900">
-        <!-- Background Massive Number -->
-        <div class="absolute -bottom-10 -right-4 text-[180px] font-bold text-white/[0.02] tracking-tighter group-hover:scale-110 group-hover:-translate-y-4 group-hover:text-purple-500/10 transition-transform duration-700 select-none pointer-events-none">02</div>
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-purple-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-
-        <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 mb-4">
-                <span class="w-2 h-2 rounded-full bg-purple-500/80 group-hover:animate-pulse"></span>
-                <span class="text-purple-400 font-mono text-xs uppercase tracking-widest">Featured Work</span>
+        <!-- 2. Profile Card -->
+        <div class="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 md:row-span-2 bg-card-bg rounded-3xl p-0 overflow-hidden border border-white/5 relative group"
+            data-aos="zoom-in" data-aos-delay="100">
+            <!-- Realistic Image instead of simple avatar placeholder -->
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 group-hover:scale-105 transition-transform duration-700">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                    alt="Tech setup"
+                    class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-700">
             </div>
-            <h3 class="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight group-hover:text-purple-300 transition-colors duration-500">Corporate Cards</h3>
-            <p class="text-gray-500 text-sm max-w-[280px] leading-relaxed group-hover:text-gray-400 transition-colors duration-500 line-clamp-2">Secure self-service financial management portal handling tier-1 enterprise scaling.</p>
-            
-            <!-- Hover Action Area -->
-            <div class="mt-8 flex items-center justify-between">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">Angular</span>
-                    <span class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">PrimeNG</span>
-                </div>
-                <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-purple-600 group-hover:border-purple-600 transition-all duration-700 shadow-lg shadow-transparent group-hover:shadow-purple-500/30">
-                    <svg class="w-4 h-4 text-white transform -rotate-45 group-hover:rotate-0 transition-transform duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </div>
+
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-dark-bg/90 to-transparent">
+                <h3 class="text-xl font-bold">Ravi Teja Kamarsu</h3>
+                <p class="text-gray-400 text-sm">Based in Andhra Pradesh, India</p>
             </div>
         </div>
-      </a>
-      
-      <!-- 10.5 View All Projects Strip -->
-      <a routerLink="/projects" class="col-span-1 md:col-span-3 lg:col-span-4 row-span-1 py-10 px-8 md:px-12 rounded-[32px] bg-white/[0.02] border border-white/10 hover:bg-white/[0.04] hover:border-white/20 flex flex-col md:flex-row items-start md:items-center justify-between group transition-all duration-500 relative overflow-hidden mt-4" data-aos="fade-up" data-aos-delay="950">
-          <!-- Glass Shine -->
-          <div class="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out"></div>
-          
-          <div class="flex items-center gap-6 relative z-10 mb-6 md:mb-0">
-              <span class="text-2xl md:text-3xl font-bold text-white tracking-tight">View All Selected Work</span>
-              <span class="hidden md:inline-flex px-3 py-1 bg-white/10 rounded-full text-xs text-gray-300 font-mono backdrop-blur-sm">Archive // 2020-Present</span>
-          </div>
-          <div class="flex items-center relative z-10 w-full md:w-auto justify-between md:justify-end">
-              <span class="md:mr-4 text-sm font-semibold text-gray-400 group-hover:text-white transition-colors duration-500 uppercase tracking-widest leading-none">Explore Platform</span>
-              <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-white transition-all duration-500 shadow-[0_0_30px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_30px_rgba(37,99,235,0.4)]">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-              </div>
-          </div>
-      </a>
-      
-      <!-- 11. CTA / Contact Card (Bottom) -->
-      <div class="col-span-1 md:col-span-3 lg:col-span-4 py-16 md:py-24 px-8 rounded-[40px] bg-card-bg border border-white/5 flex flex-col items-center justify-center text-center relative overflow-hidden mt-8" data-aos="fade-up" data-aos-delay="1000">
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/20 blur-[100px] rounded-full pointer-events-none"></div>
 
-          <div class="relative z-10 mb-10">
-            <h3 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Let's build something <span class="text-blue-500">amazing.</span></h3>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">Reach out for collaborations, questions, or just to say hello.</p>
-          </div>
+        <!-- 3. Experience Card -->
+        <div class="col-span-1 md:col-span-1 row-span-1 bg-card-bg rounded-3xl p-6 flex flex-col justify-center border border-white/5 hover:border-accent/30 transition-colors group"
+            data-aos="fade-left" data-aos-delay="200">
+            <div
+                class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4 text-accent group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                </svg>
+            </div>
+            <h2 class="text-4xl font-bold text-white mb-1">4+</h2>
+            <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Years Experience</p>
+        </div>
 
-          <div class="flex flex-col sm:flex-row items-center gap-6 relative z-10">
-            <a routerLink="/contact" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform duration-300">
-                Start a Conversation
+        <!-- 4. Marquee / Skills / Tagline -->
+        <div class="col-span-1 md:col-span-2 row-span-1 bg-card-bg rounded-3xl p-6 flex items-center justify-center border border-white/5 overflow-hidden relative group"
+            data-aos="fade-up" data-aos-delay="300">
+            <div class="absolute inset-0 bg-blue-900/5"></div>
+            <div class="flex flex-wrap gap-3 justify-center z-10">
+                <span
+                    class="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-bold tracking-wide transition-transform group-hover:animate-float cursor-default">
+                    SCALABLE WEB APPS
+                </span>
+                <span
+                    class="px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-bold tracking-wide transition-transform group-hover:animate-float cursor-default [animation-delay:200ms]">
+                    MICRO FRONTENDS
+                </span>
+                <span
+                    class="px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-300 text-sm font-bold tracking-wide transition-transform group-hover:animate-float cursor-default [animation-delay:400ms]">
+                    PERFORMANCE TUNING
+                </span>
+            </div>
+        </div>
+
+        <!-- 5. Projects Shipped Card -->
+        <div class="col-span-1 md:col-span-1 row-span-1 bg-card-bg rounded-3xl p-6 flex flex-col justify-center border border-white/5 hover:border-accent/30 transition-colors group"
+            data-aos="fade-right" data-aos-delay="400">
+            <div
+                class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4 text-purple-400 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                    </path>
+                </svg>
+            </div>
+            <div class="flex items-baseline space-x-1">
+                <h2 class="text-4xl font-bold text-white mb-1">15+</h2>
+            </div>
+            <p class="text-gray-400 text-sm font-medium uppercase tracking-wider">Software Systems</p>
+        </div>
+
+        <!-- 6. Tech Stack (Restored for balance) -->
+        <div class="col-span-1 md:col-span-2 row-span-1 bg-card-bg rounded-3xl p-6 border border-white/5 flex flex-col justify-center"
+            data-aos="fade-left" data-aos-delay="500">
+            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest mb-4">Core Tech Stack</p>
+            <div class="flex flex-wrap gap-2">
+                <span
+                    class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> Angular
+                </span>
+                <span
+                    class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> React
+                </span>
+                <span
+                    class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> TypeScript
+                </span>
+                <span
+                    class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Tailwind
+                </span>
+                <span
+                    class="px-3 py-1 bg-dark-bg/50 rounded-lg text-xs text-gray-300 border border-white/5 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span> HTML5/CSS3
+                </span>
+            </div>
+        </div>
+
+        <!-- Social Contacts Sub-Grid -->
+        <div class="col-span-1 md:col-span-2 row-span-1 grid grid-cols-3 gap-4">
+            <!-- 7. LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/ravi-teja-kamarsu-b64727119" target="_blank"
+                class="bg-[#24292e] rounded-3xl p-4 border border-white/5 flex flex-col justify-center items-center group hover:bg-[#1b1f23] transition-colors relative overflow-hidden"
+                data-aos="zoom-in" data-aos-delay="600">
+                <svg class="w-8 h-8 text-white mb-2 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                    </path>
+                </svg>
+                <span class="text-white font-bold text-[10px] uppercase tracking-widest relative z-10">LinkedIn</span>
+                <div
+                    class="absolute inset-0 bg-[#0077b5]/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                </div>
             </a>
-            
-            <div class="flex items-center bg-white/5 border border-white/10 rounded-full p-2 backdrop-blur-md">
-                 <span class="px-4 text-sm text-gray-400 font-medium">Download Resume</span>
-                 <!-- PDF Download Icon -->
-                 <a href="assets/resumes/raviteja_kamarsu_ats.pdf" download="raviteja_kamarsu_ats.pdf" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-red-500 group rounded-full transition-colors" title="Download PDF Version">
-                    <svg class="w-5 h-5 text-red-500 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023.479 0 .774-.242.774-.651 0-.366-.254-.586-.704-.586zm3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018.817.006 1.349-.444 1.349-1.396.006-.83-.479-1.268-1.255-1.268z"></path>
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM9.498 16.19c-.309.29-.765.42-1.296.42a2.31 2.31 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .954.106 1.22.319.254.202.426.533.426.923-.001.392-.131.723-.367.948zm3.807 1.355c-.42.349-1.059.515-1.84.515-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426.415.308.675.799.675 1.504 0 .763-.279 1.29-.663 1.615zM17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17v.74z"></path>
-                    </svg>
-                 </a>
-                 <!-- DOCX Download Icon -->
-                 <a href="assets/resumes/raviteja_kamarsu_ats.docx" download="raviteja_kamarsu_ats.docx" class="w-10 h-10 ml-2 flex items-center justify-center bg-white/10 hover:bg-blue-600 group rounded-full transition-colors" title="Download Word Version">
-                    <svg class="w-5 h-5 text-blue-500 group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM15.8 15.65h-1.12l-1.39-3.76-1.37 3.76h-1.18l-1.86-5.32h1.16l1.24 3.9 1.4-3.9h1l1.4 3.9 1.18-3.9h1.13l-1.6 5.32z"/>
-                    </svg>
-                 </a>
-             </div>
-          </div>
-      </div>
 
-  </div>
+            <!-- 8. GitHub Card -->
+            <a href="https://github.com/kamarsu96" target="_blank"
+                class="bg-[#24292e] rounded-3xl p-4 border border-white/5 flex flex-col justify-center items-center group hover:bg-[#1b1f23] transition-colors relative overflow-hidden"
+                data-aos="zoom-in" data-aos-delay="700">
+                <svg class="w-8 h-8 text-white mb-2 relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                    </path>
+                </svg>
+                <span class="text-white font-bold text-[10px] uppercase tracking-widest relative z-10">GitHub</span>
+                <div
+                    class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                </div>
+            </a>
+
+            <!-- 8.5 Email Card -->
+            <a href="mailto:kamarsuraviteja@gmail.com"
+                class="bg-[#24292e] rounded-3xl p-4 border border-white/5 flex flex-col justify-center items-center group hover:bg-[#1b1f23] transition-colors relative overflow-hidden"
+                data-aos="zoom-in" data-aos-delay="750">
+                <svg class="w-8 h-8 text-white mb-2 relative z-10" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                </svg>
+                <span class="text-white font-bold text-[10px] uppercase tracking-widest relative z-10">Email Me</span>
+                <div
+                    class="absolute inset-0 bg-blue-600/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                </div>
+            </a>
+        </div>
+
+        <!-- 9. Project Card 1 text-only -->
+
+        <!-- 9. Project Card 1 text-only -->
+        <a routerLink="/projects"
+            class="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-[#050505] rounded-[32px] p-8 md:p-10 border border-white/5 group hover:border-blue-500/30 transition-all duration-700 relative overflow-hidden flex flex-col justify-end min-h-[300px]"
+            data-aos="zoom-in" data-aos-delay="800">
+            <!-- Background Massive Number -->
+            <div
+                class="absolute -bottom-10 -right-4 text-[180px] font-bold text-white/[0.02] tracking-tighter group-hover:scale-110 group-hover:-translate-y-4 group-hover:text-blue-500/10 transition-transform duration-700 select-none pointer-events-none">
+                01</div>
+            <!-- Gradient Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+            </div>
+
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-blue-500/80 group-hover:animate-pulse"></span>
+                    <span class="text-blue-400 font-mono text-xs uppercase tracking-widest">Featured Work</span>
+                </div>
+                <h3
+                    class="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight group-hover:text-blue-300 transition-colors duration-500">
+                    Dynamic Reporting</h3>
+                <p
+                    class="text-gray-500 text-sm max-w-[280px] leading-relaxed group-hover:text-gray-400 transition-colors duration-500 line-clamp-2">
+                    Scalable analytics platform designed to generate real-time operational reports.</p>
+
+                <!-- Hover Action Area -->
+                <div class="mt-8 flex items-center justify-between">
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">Angular</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">TypeScript</span>
+                    </div>
+                    <div
+                        class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-700 shadow-lg shadow-transparent group-hover:shadow-blue-500/30">
+                        <svg class="w-4 h-4 text-white transform -rotate-45 group-hover:rotate-0 transition-transform duration-700"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- 10. Project Card 2 text-only -->
+        <a routerLink="/projects"
+            class="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 bg-[#050505] rounded-[32px] p-8 md:p-10 border border-white/5 group hover:border-purple-500/30 transition-all duration-700 relative overflow-hidden flex flex-col justify-end min-h-[300px]"
+            data-aos="zoom-in" data-aos-delay="900">
+            <!-- Background Massive Number -->
+            <div
+                class="absolute -bottom-10 -right-4 text-[180px] font-bold text-white/[0.02] tracking-tighter group-hover:scale-110 group-hover:-translate-y-4 group-hover:text-purple-500/10 transition-transform duration-700 select-none pointer-events-none">
+                02</div>
+            <!-- Gradient Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-purple-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+            </div>
+
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-purple-500/80 group-hover:animate-pulse"></span>
+                    <span class="text-purple-400 font-mono text-xs uppercase tracking-widest">Featured Work</span>
+                </div>
+                <h3
+                    class="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight group-hover:text-purple-300 transition-colors duration-500">
+                    Corporate Cards</h3>
+                <p
+                    class="text-gray-500 text-sm max-w-[280px] leading-relaxed group-hover:text-gray-400 transition-colors duration-500 line-clamp-2">
+                    Secure self-service financial management portal handling tier-1 enterprise scaling.</p>
+
+                <!-- Hover Action Area -->
+                <div class="mt-8 flex items-center justify-between">
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">Angular</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 text-[10px] text-gray-400 font-medium uppercase tracking-wider backdrop-blur-sm">PrimeNG</span>
+                    </div>
+                    <div
+                        class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-purple-600 group-hover:border-purple-600 transition-all duration-700 shadow-lg shadow-transparent group-hover:shadow-purple-500/30">
+                        <svg class="w-4 h-4 text-white transform -rotate-45 group-hover:rotate-0 transition-transform duration-700"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- 10.5 View All Projects Strip -->
+        <a routerLink="/projects"
+            class="col-span-1 md:col-span-3 lg:col-span-4 row-span-1 py-10 px-8 md:px-12 rounded-[32px] bg-white/[0.02] border border-white/10 hover:bg-white/[0.04] hover:border-white/20 flex flex-col md:flex-row items-start md:items-center justify-between group transition-all duration-500 relative overflow-hidden mt-4"
+            data-aos="fade-up" data-aos-delay="950">
+            <!-- Glass Shine -->
+            <div
+                class="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out">
+            </div>
+
+            <div class="flex items-center gap-6 relative z-10 mb-6 md:mb-0">
+                <span class="text-2xl md:text-3xl font-bold text-white tracking-tight">View All Selected Work</span>
+                <span
+                    class="hidden md:inline-flex px-3 py-1 bg-white/10 rounded-full text-xs text-gray-300 font-mono backdrop-blur-sm">Archive
+                    // 2020-Present</span>
+            </div>
+            <div class="flex items-center relative z-10 w-full md:w-auto justify-between md:justify-end">
+                <span
+                    class="md:mr-4 text-sm font-semibold text-gray-400 group-hover:text-white transition-colors duration-500 uppercase tracking-widest leading-none">Explore
+                    Platform</span>
+                <div
+                    class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-white transition-all duration-500 shadow-[0_0_30px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_30px_rgba(37,99,235,0.4)]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </div>
+            </div>
+        </a>
+
+        <!-- 11. CTA / Contact Card (Bottom) -->
+        <div class="col-span-1 md:col-span-3 lg:col-span-4 py-16 md:py-24 px-8 rounded-[40px] bg-card-bg border border-white/5 flex flex-col items-center justify-center text-center relative overflow-hidden mt-8"
+            data-aos="fade-up" data-aos-delay="1000">
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/20 blur-[100px] rounded-full pointer-events-none">
+            </div>
+
+            <div class="relative z-10 mb-10">
+                <h3 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Let's build something <span
+                        class="text-blue-500">amazing.</span></h3>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">Reach out for collaborations,
+                    questions, or just to say hello.</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-6 relative z-10">
+                <a routerLink="/contact"
+                    class="px-8 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform duration-300">
+                    Start a Conversation
+                </a>
+
+                <div class="flex items-center bg-white/5 border border-white/10 rounded-full p-2 backdrop-blur-md">
+                    <span class="px-4 text-sm text-gray-400 font-medium">Download Resume</span>
+                    <!-- PDF Download Icon -->
+                    <a href="assets/resumes/raviteja_kamarsu_ats.pdf" download="raviteja_kamarsu_ats.pdf"
+                        class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-red-500 group rounded-full transition-colors"
+                        title="Download PDF Version">
+                        <svg class="w-5 h-5 text-red-500 group-hover:text-white transition-colors" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023.479 0 .774-.242.774-.651 0-.366-.254-.586-.704-.586zm3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018.817.006 1.349-.444 1.349-1.396.006-.83-.479-1.268-1.255-1.268z">
+                            </path>
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM9.498 16.19c-.309.29-.765.42-1.296.42a2.31 2.31 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .954.106 1.22.319.254.202.426.533.426.923-.001.392-.131.723-.367.948zm3.807 1.355c-.42.349-1.059.515-1.84.515-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426.415.308.675.799.675 1.504 0 .763-.279 1.29-.663 1.615zM17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17v.74z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- DOCX Download Icon -->
+                    <a href="assets/resumes/raviteja_kamarsu_ats.docx" download="raviteja_kamarsu_ats.docx"
+                        class="w-10 h-10 ml-2 flex items-center justify-center bg-white/10 hover:bg-blue-600 group rounded-full transition-colors"
+                        title="Download Word Version">
+                        <svg class="w-5 h-5 text-blue-500 group-hover:text-white transition-colors" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM15.8 15.65h-1.12l-1.39-3.76-1.37 3.76h-1.18l-1.86-5.32h1.16l1.24 3.9 1.4-3.9h1l1.4 3.9 1.18-3.9h1.13l-1.6 5.32z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>

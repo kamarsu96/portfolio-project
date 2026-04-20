@@ -1,10 +1,14 @@
-<nav class="bg-dark-bg/80 backdrop-blur-md fixed top-4 left-1/2 -translate-x-1/2 z-50 border border-white/10 rounded-full w-[90%] max-w-4xl shadow-lg">
+<nav
+  class="bg-dark-bg/80 backdrop-blur-md fixed top-4 left-1/2 -translate-x-1/2 z-[10001] border border-white/10 rounded-full w-[90%] max-w-4xl shadow-lg">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a routerLink="/" class="flex items-center gap-4 group">
-      <div class="relative w-14 h-14 bg-white/[0.03] backdrop-blur-xl rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-blue-500/50 transition-all duration-500 shadow-[0_0_20px_rgba(37,99,235,0.05)] group-hover:shadow-[0_0_30px_rgba(37,99,235,0.2)]">
+      <div
+        class="relative w-14 h-14 bg-white/[0.03] backdrop-blur-xl rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-blue-500/50 transition-all duration-500 shadow-[0_0_20px_rgba(37,99,235,0.05)] group-hover:shadow-[0_0_30px_rgba(37,99,235,0.2)]">
         <!-- Modern Glow Backdrop -->
-        <div class="absolute inset-2 bg-blue-600/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-        
+        <div
+          class="absolute inset-2 bg-blue-600/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+        </div>
+
         <svg class="w-10 h-10 relative z-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="rtLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -12,50 +16,67 @@
               <stop offset="100%" stop-color="#06b6d4" />
             </linearGradient>
             <filter id="rtGlow">
-              <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+              <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
               <feMerge>
-                <feMergeNode in="coloredBlur"/>
-                <feMergeNode in="SourceGraphic"/>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
           </defs>
           <g filter="url(#rtGlow)">
-             <!-- Refined Serif 'R' -->
-             <path d="M25 70V30H45C52 30 58 35 58 42C58 49 52 54 45 54H35M45 54L60 70" stroke="url(#rtLogoGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-             <!-- Refined Serif 'T' -->
-             <path d="M55 30H85M70 30V70" stroke="url(#rtLogoGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-             <!-- Improved Swoosh -->
-             <path d="M15 50C25 45 60 45 85 65" stroke="url(#rtLogoGradient)" stroke-width="3" stroke-linecap="round" stroke-opacity="0.6"/>
+            <!-- Refined Serif 'R' -->
+            <path d="M25 70V30H45C52 30 58 35 58 42C58 49 52 54 45 54H35M45 54L60 70" stroke="url(#rtLogoGradient)"
+              stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Refined Serif 'T' -->
+            <path d="M55 30H85M70 30V70" stroke="url(#rtLogoGradient)" stroke-width="6" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <!-- Improved Swoosh -->
+            <path d="M15 50C25 45 60 45 85 65" stroke="url(#rtLogoGradient)" stroke-width="3" stroke-linecap="round"
+              stroke-opacity="0.6" />
           </g>
         </svg>
       </div>
       <div class="flex flex-col">
-        <span class="text-xl font-bold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors tracking-tight leading-none">RAVI TEJA</span>
-        <span class="text-[9px] font-bold text-gray-500 uppercase tracking-[0.4em] group-hover:text-cyan-400 transition-colors mt-1">KAMARSU</span>
+        <span
+          class="text-xl font-bold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors tracking-tight leading-none">RAVI
+          TEJA</span>
+        <span
+          class="text-[9px] font-bold text-gray-500 uppercase tracking-[0.4em] group-hover:text-cyan-400 transition-colors mt-1">KAMARSU</span>
       </div>
     </a>
-    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-sticky" [attr.aria-expanded]="isMenuOpen" (click)="toggleMenu()">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
+    <button data-collapse-toggle="navbar-sticky" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+      aria-controls="navbar-sticky" [attr.aria-expanded]="isMenuOpen" (click)="toggleMenu()">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
     </button>
-    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky" [class.hidden]="!isMenuOpen">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-card-bg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky"
+      [class.hidden]="!isMenuOpen">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-card-bg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
         <li>
-          <a routerLink="/" routerLinkActive="active-nav-link" [routerLinkActiveOptions]="{exact: true}" class="block py-2 px-3 text-white rounded hover:text-accent md:p-0 transition-colors duration-300" aria-current="page">Home</a>
+          <a routerLink="/" routerLinkActive="active-nav-link" [routerLinkActiveOptions]="{exact: true}"
+            class="block py-2 px-3 text-white rounded hover:text-accent md:p-0 transition-colors duration-300"
+            aria-current="page">Home</a>
         </li>
         <li>
-          <a routerLink="/projects" routerLinkActive="active-nav-link" class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">Projects</a>
+          <a routerLink="/projects" routerLinkActive="active-nav-link"
+            class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">Projects</a>
         </li>
         <li>
-          <a routerLink="/experience" routerLinkActive="active-nav-link" class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">Experience</a>
+          <a routerLink="/experience" routerLinkActive="active-nav-link"
+            class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">Experience</a>
         </li>
         <li>
-          <a routerLink="/about" routerLinkActive="active-nav-link" class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">About</a>
+          <a routerLink="/about" routerLinkActive="active-nav-link"
+            class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">About</a>
         </li>
         <li>
-          <a routerLink="/contact" routerLinkActive="active-nav-link" class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">Contact</a>
+          <a routerLink="/contact" routerLinkActive="active-nav-link"
+            class="block py-2 px-3 text-gray-300 rounded hover:text-accent md:p-0 transition-colors duration-300">Contact</a>
         </li>
       </ul>
     </div>
