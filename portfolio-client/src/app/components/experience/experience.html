@@ -21,7 +21,7 @@
                   {{ item.role }}
               </h3>
               <div class="mb-4 text-sm md:text-base text-gray-500 font-medium">
-                  {{ item.company }} &bull; {{ item.duration }}
+                  {{ item.company }} &bull; {{ item.duration }} <span *ngIf="item.location">&bull; {{ item.location }}</span>
               </div>
               
               <p *ngIf="item.description && item.description.length === 1" class="text-base text-gray-400 leading-relaxed font-light">

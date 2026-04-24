@@ -36,11 +36,14 @@ export class ExperienceComponent implements OnInit {
     this.experience.set([
       {
         role: "Front-End Developer | Software Engineer",
-        company: "Finsol Consultancy",
+        company: "Finsol Consultancy Private Limited",
         duration: "July 2022 — Present",
         isCurrent: true,
         description: [
-          "Developing scalable enterprise web applications, mentoring junior developers, and optimizing UI performance."
+          "Developed and maintained 15+ scalable enterprise web applications using Angular, ReactJS, and TypeScript.",
+          "Improved application performance by 30% through advanced coding techniques and UI optimization.",
+          "Reduced production defects by 40% using structured debugging and unit testing.",
+          "Increased deployment accuracy by 35% implementing GitHub version control workflows."
         ]
       }
     ]);
