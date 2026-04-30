@@ -159,7 +159,10 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     this.syncProjectFromSlug(this.route.snapshot.params['slug']);
 
     setTimeout(() => {
-      import('aos').then(AOS => AOS.refresh());
+      import('aos').then((m) => {
+        const AOS = m.default || m;
+        AOS.refresh();
+      });
     }, 500);
   }
 

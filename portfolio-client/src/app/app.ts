@@ -15,7 +15,8 @@ export class App {
 
   ngOnInit() {
     // Dynamic import to avoid SSR issues if any (standard practice, though this is CSR)
-    import('aos').then(AOS => {
+    import('aos').then((m) => {
+      const AOS = m.default || m;
       AOS.init({
         duration: 800,
         once: true,
