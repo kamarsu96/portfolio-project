@@ -3,6 +3,10 @@
     "outputDirectory": "dist/portfolio-client/browser",
     "routes": [
         {
+            "src": "/.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|json|txt|woff|woff2|ttf)$",
+            "dest": "/$0"
+        },
+        {
             "src": "/(.*)",
             "dest": "/index.html"
         }
